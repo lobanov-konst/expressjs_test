@@ -15,6 +15,7 @@
         $interpolateProvider.startSymbol('[[').endSymbol(']]');
         //$locationProvider.html5Mode(true).hashPrefix('!');
         $locationProvider.html5Mode({enabled: true, requireBase: false});
+        $locationProvider.hashPrefix('!');
         $ocLazyLoadProvider.config({
             //'debug': true,
             'modules': [
@@ -31,7 +32,6 @@
                 },
                 'resolve': {
                     'loadModules': ['$ocLazyLoad', function($ocLazyLoad) {
-                        //console.log('loadModule');
                         return $ocLazyLoad.load(['AppController']);
                     }]
                 }
@@ -44,6 +44,7 @@
                     }
                 },
             })
+
         //.state('error', {
         //    'url': '/error',
         //    'templateUrl': 'js/app/view/404.html'
@@ -55,7 +56,7 @@
     function run($rootScope, $state) {
         //$state.go('index');
         $rootScope.$on('$stateChangeStart', function(event, toState) {
-            console.log(toState);
+            //console.log(toState);
         });
     };
 })();

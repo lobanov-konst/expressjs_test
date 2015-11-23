@@ -32,11 +32,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 //    res.sendfile(__dirname + '/public/index.html');
 //});
 app.all('/*', function(req, res) {
-    console.log('All');
+    //console.log('All');
     res
-        .status(200)
-        .set({'content-type': 'text/html; charset=utf-8'})
-        .sendfile(__dirname + '/public/index.html');
+        //.status(200)
+        //.set({'content-type': 'text/html; charset=utf-8'})
+        .sendFile(__dirname + '/public/index.html');
 })
 
 //app.use(express.static(path.join(__dirname, 'public')));
