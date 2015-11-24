@@ -4,7 +4,8 @@
   "dependencies": {
     "angular": "~1.4.7",
     "angular-ui-router": "~0.2.15",
-    "oclazyload": "~1.0.8"
+    "oclazyload": "~1.0.8",
+    "angular-ui-router-styles": "~0.0.6"
   },
   "exportsOverride": {
     "angular": {
@@ -12,6 +13,11 @@
     },
     "angular-ui-router": {
       ".": "**/angular*.js"
+    },
+    "angular-ui-router-styles": {
+      ".": [
+        "**/ui-router-styles.js"
+      ]
     },
     "oclazyload": {
       ".": [
