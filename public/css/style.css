@@ -1,9 +1,59 @@
 body {
-    background-color: #333333;
+    background-color: #000000;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     color: #cccccc;
+    margin: 0;
 }
 
-a {
-    color: #00B7FF;
+.screen {
+    height: 576px;
+    width: 720px;
+    background-image: url(/img/1920x1080/35275.jpg);
+}
+
+a.btn {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(212, 75, 56); /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+}
+
+a.btn:hover {
+    background: rgb(232, 95, 76);
+}
+
+a.btn:active {
+    background: rgb(152, 15, 0);
+}
+
+.menu-screen {
+    position: relative;
+}
+
+.menu-screen a.btn {
+    margin: 5px;
+    position: absolute;
+    text-align: center;
+}
+
+.menu-screen a.btn.tv {
+    top: 20px;
+    width: 345px;
+    height: 400px;
+}
+
+.menu-screen a.btn.fsto {
+    top: 20px;
+    right: 0px;
+    width: 276px;
+    height: 238px;
+}
+
+.menu-screen a.btn.usb {
+    top: 284px;
+    right: 0px;
+    width: 276px;
+    height: 136px;
 }
